@@ -30,7 +30,7 @@ jobs:
     - run: npm run build --if-present
     - run: npm test
     - name: Heroku Deploy
-      uses: akhileshns/heroku-deploy@3.12.12
+      uses: akhileshns/heroku-deploy@v3.12.12
       with:
         args: deploy --dir=build --prod
         heroku_api_key: ${{ secrets.HEROKU_API_KEY}}
